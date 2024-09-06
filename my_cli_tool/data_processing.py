@@ -9,7 +9,7 @@ import numpy as np
 # Set up logging
 logging.basicConfig(filename='logs/data_preprocessing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-def load_data(file_path: str, handle_missing: str = 'fill', fill_value: Optional[Any] = None, enforce_dtypes: Optional[Dict[str, str]] = None) -> Optional[pd.DataFrame]:
+def load_data(file_path: str, handle_missing: str = 'fill', fill_value: Optional[any] = None, enforce_dtypes: Optional[Dict[str, str]] = None) -> Optional[pd.DataFrame]:
     """Load data from a file, handling missing values, file types, and data type enforcement.
 
     Args:
